@@ -205,4 +205,11 @@ public class Coverage implements TraceEventVisitor {
         return counter.getNonZeroIndices().hashCode();
     }
 
+    /**
+     * @return a string representing the counter
+     */
+    @Override
+    public String toString() {
+        return "counter: " + counter.toString();
+    }
 }
